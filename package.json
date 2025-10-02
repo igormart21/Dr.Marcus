@@ -1,0 +1,19 @@
+{
+  "name": "dr-marcus-vinicius",
+  "version": "1.0.0",
+  "description": "Site profissional do Dr. Marcus Vinícius Cunha",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "dev": "python3 -m http.server 3000"
+  },
+  "keywords": [
+    "pediatra",
+    "neonatologia", 
+    "londrina",
+    "medico"
+  ],
+  "author": "Dr. Marcus Vinícius Cunha",
+  "license": "MIT",
+  "homepage": "https://dr-marcus-vinicius.vercel.app"
+}
