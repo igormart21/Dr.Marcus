@@ -2,443 +2,2242 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Marcus Vinícius Cunha – Neonatologia & Puericultura</title>
-    <meta name="description" content="Dr. Marcus Vinícius Cunha - Pediatra especialista em Neonatologia com 33 anos de experiência. Consultas sem pressa, acolhimento humano em Londrina-PR.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Dr. Marcus Vinícius Cunha – Pediatra em Londrina | Neonatologia & Puericultura</title>
+    <meta name="description" content="Pediatra em Londrina com 33 anos de experiência. Cuidado humano, completo e baseado em ciência para a primeira infância. Consultas sem pressa com acolhimento.">
+    <meta name="robots" content="max-image-preview:large">
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Advanced Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
         body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #1f2937;
-            background-color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            background: #fefefe;
         }
-
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+        
+        .premium-gradient {
+            color: #60a5fa;
+            background: none;
+        }
+        
+        .glass-morphism {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        
+        .luxury-shadow {
+            box-shadow: 
+                0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.04),
+                0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+        
+        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-
-        .header {
-            background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: fixed;
+        
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2563eb;
+        }
+        
+        .logo-img {
+            height: 140px;
+            width: auto;
+            max-height: 140px;
+            object-fit: contain;
+        }
+        
+        .hero-nav {
+            position: absolute;
             top: 0;
             left: 0;
             right: 0;
             z-index: 1000;
-            padding: 15px 0;
+            padding: 1rem 0;
         }
-
-        .header-content {
+        
+        .hero-nav-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0;
         }
-
-        .logo img {
-            height: 80px;
-            max-width: 400px;
-        }
-
+        
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 2rem;
         }
-
+        
         .nav-menu a {
             text-decoration: none;
-            color: #1f2937;
+            color: white;
             font-weight: 500;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
         }
-
+        
         .nav-menu a:hover {
-            color: #2563eb;
+            background: rgba(255,255,255,0.2);
+            color: #fbbf24;
+            transform: translateY(-2px);
         }
-
+        
+        /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-            padding: 140px 0 80px;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 140px 0 0px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0;
+            z-index: 5;
         }
-
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        
         .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            grid-template-columns: 1fr 400px;
+            gap: 4rem;
             align-items: center;
         }
-
-        .hero-text h1 {
-            font-family: 'Merriweather', serif;
-            font-size: 48px;
+        
+        .hero-text {
+            text-align: left;
+        }
+        
+        .hero-image {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .doctor-photo {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: block;
+        }
+        
+        .doctor-photo:hover {
+            transform: translateY(-5px) scale(1.01);
+        }
+        
+        .photo-frame {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            padding: 12px 24px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .hero-badge i {
+            margin-right: 8px;
+            color: #f093fb;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
             font-weight: 700;
-            color: #1f2937;
-            margin-bottom: 20px;
+            margin-bottom: 1rem;
             line-height: 1.2;
         }
-
-        .hero-headline {
-            font-size: 24px;
-            color: #2563eb;
+        
+        .hero h2 {
+            font-size: 1.8rem;
             font-weight: 600;
-            margin-bottom: 15px;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
         }
-
-        .hero-subheadline {
-            font-size: 18px;
-            color: #6b7280;
-            margin-bottom: 30px;
-            line-height: 1.7;
+        
+        .hero-subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
         }
-
-        .btn {
-            display: inline-flex;
+        
+        .hero-description {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
             align-items: center;
-            gap: 8px;
+        }
+        
+        .btn {
             padding: 15px 30px;
-            border-radius: 8px;
-            text-decoration: none;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
             font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            margin: 0 10px 20px 0;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
         }
-
+        
         .btn-primary {
-            background: #2563eb;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            border: none;
+            position: relative;
+            overflow: hidden;
         }
-
-        .btn-secondary {
-            background: #059669;
-            color: white;
-        }
-
-        .hero-image img {
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
             width: 100%;
-            height: 500px;
-            object-fit: cover;
-            border-radius: 20px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
         }
-
+        
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        /* Trust Indicators */
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Sections */
         .section {
             padding: 80px 0;
+            position: relative;
         }
-
-        .about {
-            background: #f8fafc;
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
         }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 400px 1fr;
-            gap: 60px;
-            align-items: center;
+        
+        .section-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-
-        .doctor-image img {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-            border-radius: 20px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        
+        .section-title p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.8);
+            font-weight: 400;
+            margin-top: 0.5rem;
+            font-style: italic;
         }
-
-        .doctor-info h2 {
-            font-family: 'Merriweather', serif;
-            font-size: 36px;
-            margin-bottom: 20px;
+        
+        .section-gray {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            position: relative !important;
+            z-index: 4 !important;
+            margin-top: -1px !important;
+            padding-top: 0 !important;
+            transform: translateZ(0) translateY(0px) translateX(0px) scale(1) !important;
+            backface-visibility: hidden !important;
+            will-change: auto !important;
         }
-
-        .credentials {
+        
+        /* Força POSIÇÃO FIXA durante scroll */
+        .section-gray[data-aos-disable="true"] {
+            transform: translateZ(0) translateY(0px) translateX(0px) scale(1) !important;
+            margin-top: -1px !important;
+            padding-top: 0 !important;
+        }
+        
+        /* Bloqueia qualquer animação AOS */
+        .section-gray * {
+            transform: none !important;
+        }
+        
+        .section-gray::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            z-index: 6;
+        }
+        
+        .section-gray::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="subtle-pattern" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(102, 126, 234, 0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23subtle-pattern)"/></svg>');
+            opacity: 0.6;
+            z-index: -1;
+        }
+        
+        .section-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-alt {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #1e293b;
+        }
+        
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #64748b;
+        }
+        
+        /* Doctor Info */
+        .doctor-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin: 30px 0;
+            gap: 4rem;
+            align-items: center;
         }
-
-        .credential-group h3 {
-            color: #2563eb;
-            font-size: 20px;
-            margin-bottom: 15px;
+        
+        .doctor-photo {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 
+                0 25px 50px rgba(0,0,0,0.2),
+                0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        .credential-list {
+        
+        .doctor-photo:hover {
+            transform: translateY(-5px) scale(1.01);
+        }
+        
+        .doctor-info h2 {
+            text-align: left;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .doctor-info p {
+            text-align: left;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .credentials {
+            background: #e0f2fe;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+        
+        .credentials h3 {
+            color: #0369a1;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .credentials ul {
             list-style: none;
+            padding: 0;
         }
-
-        .credential-list li {
+        
+        .credentials li {
+            padding: 0.5rem 0;
             display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            margin-bottom: 10px;
-            color: #6b7280;
+            align-items: center;
+            gap: 0.5rem;
         }
-
-        .credential-list li i {
-            color: #059669;
-            margin-top: 3px;
+        
+        .credentials li:before {
+            content: "✓";
+            color: #0369a1;
+            font-weight: bold;
         }
-
-        .contact {
-            background: white;
+        
+        /* SELO ESTRATÉGICO */
+        .dr-seal {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            z-index: 10;
+            opacity: 0.85;
+            border-radius: 50%;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+        }
+        
+        .dr-seal:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        
+        /* Posições estratégicas do selo */
+        .hero .dr-seal {
+            top: 60px;
+            right: 40px;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .doctor-section .dr-seal {
+            top: 20px;
+            right: 30px;
+            width: 110px;
+            height: 110px;
+        }
+        
+        .credentials .dr-seal {
+            position: relative;
+            top: auto;
+            right: auto;
+            margin: 0 auto 15px;
+            display: block;
+            width: 80px;
+            height: 80px;
             text-align: center;
         }
-
-        .contact h2 {
-            font-family: 'Merriweather', serif;
-            font-size: 36px;
-            margin-bottom: 50px;
+        
+        .branding-section .dr-seal {
+            top: 30px;
+            right: 40px;
+            width: 100px;
+            height: 100px;
         }
 
-        .contact-info {
-            background: #f8fafc;
-            padding: 40px;
+        /* Strategic Branding Section */
+        .branding-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .branding-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="branding-pattern" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(102, 126, 234, 0.03)"/><circle cx="20" cy="20" r="0.5" fill="rgba(118, 75, 162, 0.02)"/></pattern></defs><rect width="100" height="100" fill="url(%23branding-pattern)"/></svg>');
+            opacity: 0.5;
+        }
+        
+        .branding-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .branding-image {
+            text-align: center;
+        }
+        
+        .circular-photo {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.15),
+                0 10px 20px rgba(0, 0, 0, 0.1),
+                inset 0 2px 4px rgba(255, 255, 255, 0.8);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        
+        .circular-photo::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            z-index: -1;
+            opacity: 0.3;
+            animation: rotate 10s linear infinite;
+        }
+        
+        .circular-photo:hover {
+            transform: scale(1.05);
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .branding-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #1e293b;
+            position: relative;
+        }
+        
+        .branding-text h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+        
+        .branding-points {
+            margin-top: 2rem;
+        }
+        
+        .branding-point {
+            display: flex !important;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
             border-radius: 12px;
-            max-width: 600px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease;
+            animation: none !important;
+            transform: translateY(0) !important;
+            opacity: 1 !important;
+        }
+        
+        /* FORÇA elementos de branding a aparecer SEMPRE */
+        .branding-section * {
+            animation: none !important;
+            transform: translateY(0) translateX(0) scale(1) rotate(0deg) !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: inherit !important;
+        }
+        
+        .branding-text {
+            animation: none !important;
+            transform: translateY(0) translateX(0) scale(1) !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        
+        .branding-image {
+            animation: none !important;
+            transform: translateY(0) translateX(0) scale(1) !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        
+        .circular-photo {
+            animation: none !important;
+            transform: translateY(0) translateX(0) scale(1) !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        
+        .branding-content {
+            animation: none !important;
+            transform: translateY(0) translateX(0) scale(1) !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        
+        .branding-point:hover {
+            transform: translateX(10px);
+        }
+        
+        .branding-point .icon {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-top: 0.2rem;
+        }
+        
+        .branding-point h4 {
+            margin-bottom: 0.5rem;
+            color: #1e293b;
+            font-size: 1.1rem;
+        }
+        
+        .branding-point p {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 
+                0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 
+                0 25px 35px -5px rgba(0, 0, 0, 0.15), 
+                0 15px 15px -5px rgba(0, 0, 0, 0.08);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+        
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .step {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+        
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
             margin: 0 auto;
         }
-
-        .contact-item {
-            margin-bottom: 20px;
+        
+        .faq-item {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            box-shadow: 
+                0 15px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 7px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        .footer {
-            background: linear-gradient(135deg, #2563eb 0%, #059669 100%);
+        
+        .faq-item:hover {
+            transform: translateY(-3px);
+        }
+        
+        .faq-question {
+            padding: 2rem;
+            background: rgba(248, 250, 252, 0.8);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-question:hover {
+            background: rgba(226, 232, 240, 0.9);
+        }
+        
+        .faq-answer {
+            padding: 1.5rem;
+            background: rgba(248, 250, 252, 0.8);
+            display: none !important;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border-top: 1px solid rgba(226, 232, 240, 0.5);
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block !important;
+            opacity: 1 !important;
+            max-height: 300px !important;
+        }
+        
+        .faq-item.active .faq-question {
+            background: rgba(59, 130, 246, 0.1);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        
+        .faq-item.active .faq-question span {
+            color: #3b82f6;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
             color: white;
-            padding: 60px 0 20px;
-            clear: both;
-            margin-top: 40px;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 60px;
-            margin-bottom: 40px;
-            justify-content: center;
-        }
-
-        .footer-section h3 {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 1.5em;
-        }
-
-        .footer-contact {
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            margin-top: 20px;
-        }
-
-        .footer-contact p {
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-
-        .footer-info {
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            padding-top: 20px;
             text-align: center;
+            position: relative;
         }
-
-        .footer-copyright {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 14px;
+        
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dark-pattern" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23dark-pattern)"/></svg>');
+            opacity: 0.4;
         }
-
+        
+        .testimonials h2 {
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* FORÇA seção de depoimentos a aparecer SEMPRE */
+        .testimonials * {
+            animation: none !important;
+            transform: translateY(0) translateX(0) !important;
+            opacity: 1 !important;
+        }
+        
+        .review-content {
+            animation: none !important;
+            transform: translateY(0) translateX(0) !important;
+            opacity: 1 !important;
+        }
+        
+        .review-card {
+            animation: none !important;
+            transform: translateY(0) translateX(0) !important;
+            opacity: 1 !important;
+        }
+        
+        .testimonial-slider {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            padding: 2rem 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonial {
+            min-width: 320px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .testimonial:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+        
+        /* Google Reviews Widget */
+        .google-reviews-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .google-reviews-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .google-reviews-slider {
+            display: flex;
+            gap: 1.5rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 1rem 0 2rem 0;
+            scrollbar-width: none;
+            -ming-overflow-scrolling: touch;
+            position: relative;
+        }
+        
+        .google-reviews-slider {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1rem 0 2rem 0;
+            position: relative;
+            overflow-x: hidden;
+            white-space: nowrap;
+        }
+        
+        .google-reviews-slider::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .google-review-card {
+            min-width: 300px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            scroll-snap-align: start;
+            position: relative;
+        }
+        
+        .google-review-card:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+        
+        .review-stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .review-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .review-profile-photo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(255,255,255,0.3);
+            flex-shrink: 0;
+        }
+        
+        .review-author-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .review-date {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        
+        .google-logo {
+            width: 16px;
+            height: 16px;
+            margin-left: auto;
+        }
+        
+        .scroll-hint {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+        
+        /* Modern Google Reviews Widget */
+        .google-reviews-widget {
+            background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(251,191,36,0.05) 100%);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+            border: 1px solid rgba(251,191,36,0.2);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
+        
+        .review-widget-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+        
+        .google-logo-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 1rem auto;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            width: fit-content;
+        }
+        
+        .google-rating-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .google-rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 0.75rem;
+            backdrop-filter: blur(10px);
+            flex-wrap: nowrap;
+            width: fit-content;
+            margin-bottom: 0.5rem;
+        }
+        
+        .star-rating {
+            background: linear-gradient(to right, #fbbf24, #f59e0b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.125rem;
+        }
+        
+        .star {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: currentColor;
+        }
+        
+        .rating-text {
+            color: #60a5fa;
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: 0.025em;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            line-height: 1;
+            white-space: nowrap;
+        }
+        
+        .rating-summary {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+            margin-top: 0;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.03);
+            border-radius: 0.5rem;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .reviews-carousel {
+            position: relative;
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+        
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            gap: 0;
+        }
+        
+        .review-card {
+            width: 100%;
+            flex-shrink: 0;
+            padding: 0 1rem;
+        }
+        
+        .review-content {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+            border: 1px solid rgba(251,191,36,0.2);
+            text-align: center;
+            max-width: 42rem;
+            margin: 0 auto;
+        }
+        
+        .reviewer-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .profile-image-container {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        
+        .profile-image {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(251,191,36,0.3);
+        }
+        
+        .google-badge {
+            position: absolute;
+            bottom: -0.25rem;
+            right: -0.25rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            background: #ffffff;
+            border-radius: 50%;
+            padding: 0.25rem;
+        }
+        
+        .review-stars-small {
+            background: linear-gradient(to right, #fbbf24, #f59e0b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            display: flex;
+            gap: 0.125rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .star-small {
+            width: 1.25rem;
+            height: 1.25rem;
+            fill: currentColor;
+        }
+        
+        .reviewer-name {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .review-date {
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+        
+        .review-quote {
+            color: #64748b;
+            font-size: 1.125rem;
+            line-height: 1.75;
+            font-style: italic;
+            margin: 0;
+        }
+        
+        /* Navigation Controls */
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.9);
+            border: 1px solid rgba(251,191,36,0.3);
+            border-radius: 50%;
+            padding: 0.75rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .carousel-nav:hover {
+            background: #ffffff;
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .carousel-prev {
+            left: 1rem;
+        }
+        
+        .carousel-next {
+            right: 1rem;
+        }
+        
+        .nav-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: #60a5fa;
+            stroke-width: 2;
+        }
+        
+        /* Indicators */
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        .indicator {
+            width: 0.75rem;
+            height: 0.75rem;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .indicator:hover {
+            background: rgba(255,255,255,0.5);
+        }
+        
+        .indicator.active {
+            background: #fbbf24;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .google-reviews-widget {
+                padding: 1.5rem;
+                margin: 1rem auto;
+            }
+            
+            .review-content {
+                padding: 1.5rem;
+            }
+            
+            .carousel-nav {
+                display: none;
+            }
+            
+            .reviews-carousel {
+                padding: 0 1rem;
+            }
+        }
+        
+        /* CTA Final */
+        .cta-final {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #059669 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 6s ease infinite;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .cta-final::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="cta-pattern" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23cta-pattern)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .cta-final h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-final p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-final .cta-buttons {
+            justify-content: center;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-final .section-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Contact */
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .contact-details {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 
+                0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 7px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        
+        .contact-details:hover {
+            transform: translateY(-5px) scale(1.01);
+        }
+        
+        .contact-details h3 {
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+        
+        .footer p {
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
+        }
+        
+        /* Responsive */
         @media (max-width: 768px) {
             .nav-menu {
                 display: none;
             }
-
+            
+            .hero-nav-content {
+                justify-content: center !important;
+            }
+            
+            .logo-img {
+                height: 180px !important;
+                width: auto;
+                max-height: 180px !important;
+            }
+            
+            /* Selo responsivo */
+            .dr-seal {
+                width: 80px !important;
+                height: 80px !important;
+            }
+            
+            .hero .dr-seal {
+                top: 20px !important;
+                right: 20px !important;
+                width: 70px !important;
+                height: 70px !important;
+            }
+            
+            .doctor-section .dr-seal {
+                top: 10px !important;
+                right: 15px !important;
+                width: 80px !important;
+                height: 80px !important;
+            }
+            
+            .credentials .dr-seal {
+                width: 60px !important;
+                height: 60px !important;
+                margin: 0 auto 15px !important;
+                display: block !important;
+                position: relative !important;
+                top: auto !important;
+                right: auto !important;
+                text-align: center !important;
+            }
+            
+            .branding-section .dr-seal {
+                top: 15px !important;
+                right: 20px !important;
+                width: 70px !important;
+                height: 70px !important;
+            }
+            
+            .trust-indicators {
+                display: none !important;
+            }
+            
             .hero-content {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                text-align: center;
+                gap: 2rem;
+            }
+            
+            .hero-text {
                 text-align: center;
             }
-
-            .hero-text h1 {
-                font-size: 36px;
+            
+            .hero h1 {
+                font-size: 2rem;
             }
-
-            .hero-headline {
-                font-size: 20px;
+            
+            .hero h2 {
+                font-size: 1.4rem;
             }
-
-            .hero-subheadline {
-                font-size: 16px;
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
             }
-
-            .about-content {
+            
+            .doctor-photo {
+                max-width: 280px;
+                height: auto;
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+            }
+            
+            .doctor-section {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                text-align: center;
+                gap: 2rem;
+                justify-items: center;
+            }
+            
+            .doctor-info h2 {
                 text-align: center;
             }
-
-            .credentials {
+            
+            .doctor-info p {
+                text-align: center;
+            }
+            
+            .contact-info {
                 grid-template-columns: 1fr;
-                gap: 30px;
             }
-
-            .footer-content {
-                grid-template-columns: 1fr !important;
-                gap: 30px;
-                margin-bottom: 30px;
-                padding: 0 15px;
+            
+            .cta-buttons {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
             }
-
-            .footer-section {
+            
+            .trust-indicators {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .branding-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+            
+            .circular-photo {
+                width: 240px;
+                height: 240px;
+            }
+            
+            .branding-text h2 {
+                font-size: 2rem;
                 text-align: center;
             }
-
-            .logo img {
-                height: 70px;
-                max-width: 300px;
+            
+            .branding-points {
+                text-align: left;
             }
-
-            .container {
-                padding: 0 15px;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
 
+        .fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="#" class="logo">
-                    <img src="assets/images/logos/LOGO HORIZONTAL.png" alt="Dr. Vinícius - Pediatra">
-                </a>
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                        <li><a href="https://wa.me/5543999999999" target="_blank">WhatsApp</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Dr. Marcus Vinícius Cunha</h1>
-                    <div class="hero-headline">👨‍⚕️ Neonatologia & Puericultura</div>
-                    <div class="hero-subheadline">
-                        Pediatra especialista com 33 anos de experiência cuidando de bebês e crianças. Consultas com tempo adequado, acolhimento humano e base científico em Londrina.
+        <!-- Navigation Bar -->
+        <div class="hero-nav">
+            <div class="container">
+                <div class="hero-nav-content">
+                    <div class="logo">
+                        <img src="assets/logos/LOGO HORIZONTAL.png" alt="Dr. Vinicius Pediatra" class="logo-img">
                     </div>
-                    <div class="hero-ctas">
-                        <a href="#contato" class="btn btn-primary">
-                            <i class="fas fa-calendar-check"></i>
-                            Agendar consulta
-                        </a>
-                        <a href="https://wa.me/5543999999999" class="btn btn-secondary" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                            Falar no WhatsApp
-                        </a>
-                    </div>
+                    <nav>
+                        <ul class="nav-menu">
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="hero-image">
-                    <img src="assets/images/photos/DSC07448.JPG" alt="Dr. Marcus Vinícius Cunha">
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="hero-text">
+                    <div class="hero-badge" data-aos="fade-up">
+                        <span><i class="fas fa-stethoscope"></i> Especialista em Primeira Infância</span>
+                    </div>
+                    <h1 >Pediatra em Londrina</h1>
+                    <p class="hero-subtitle premium-gradient" >Dr. Marcus Vinícius Cunha</p>
+                    <h2 >Seu filho merece um começo de vida com <span class="premium-gradient">calma, acolhimento</span> e ciência</h2>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                        Muitos pais se sentem inseguros nas primeiras fases da infância. Consultas rápidas só aumentam a ansiedade. 
+                        Aqui, você encontra cuidado humano, completo e baseado em ciência.
+                    </p>
+                    <div class="cta-buttons" data-aos="zoom-in" data-aos-delay="250">
+                        <a href="#contato" class="btn btn-primary">
+                            <i class="fas fa-calendar-alt"></i> Agendar Consulta
+                        </a>
+                        <a href="https://wa.me/5543999999999" class="btn btn-secondary">
+                            <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                        </a>
+                    </div>
+                    <div class="trust-indicators" >
+                        <div class="trust-item">
+                            <span>🕒</span>
+                            <span>Consultas sem pressa</span>
+                        </div>
+                        <div class="trust-item">
+                            <span>❤️</span>
+                            <span>Acolhimento humano</span>
+                        </div>
+                        <div class="trust-item">
+                            <span>📍</span>
+                            <span>Londrina – PR</span>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+                        CRM 12341 PR / RQE 9560
+                    </p>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="125">
+                    <div class="photo-frame">
+                        <img src="assets/fotos/DSC07448.JPG" alt="Dr. Marcus Vinícius Cunha - Pediatra" class="doctor-photo">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section id="sobre" class="about section">
+    <!-- Problem Identification -->
+    <section class="section section-gray" data-aos="fade-in" data-aos-disable="true">
         <div class="container">
-            <div class="about-content">
-                <div class="doctor-image">
-                    <img src="assets/images/photos/DSC07409.JPG" alt="Dr. Marcus Vinícius">
+            <div class="section-content">
+                <h2>Talvez você já tenha sentido isso…</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div style="background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                        <p><strong>Consultas corridas, sem tempo para perguntas</strong></p>
+                    </div>
+                    <div style="background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🌙</div>
+                        <p><strong>Insegurança sobre sono, alimentação, vacinação</strong></p>
+                    </div>
+                    <div style="background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">❓</div>
+                        <p><strong>Informações conflitantes em blogs e redes sociais</strong></p>
+                    </div>
                 </div>
-                <div class="doctor-info">
+                <p style="margin-top: 2rem; font-style: italic; color: #2563eb;">
+                    "Com apoio certo, muitas inseguranças podem ser evitadas desde o início."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Section -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="doctor-section">
+                <img src="assets/logos/SELO .png" alt="Selo de Qualidade Dr. Vinicius Pediatra" class="dr-seal">
+                <div data-aos="fade-right">
+                    <img src="assets/fotos/DSC07409.JPG" alt="Dr. Marcus Vinícius Cunha" class="doctor-photo">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="50"><div class="doctor-info">
                     <h2>Eu sou o Dr. Marcus Vinícius da Cunha, Pediatra há 33 anos</h2>
+                    <p>"Minha missão é traduzir ciência em orientações claras e aplicáveis no dia a dia da sua família."</p>
                     
                     <div class="credentials">
-                        <div class="credential-group">
-                            <h3>Formação:</h3>
-                            <ul class="credential-list">
-                                <li><i class="fas fa-check-circle"></i> Residência em Pediatria – Hospital Darcy Vargas (SP)</li>
-                                <li><i class="fas fa-check-circle"></i> Residência em Neonatologia – Hospital Leonor Mendes (SP)</li>
-                                <li><i class="fas fa-check-circle"></i> Nutrição Pediátrica – Universidade de Boston</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="credential-group">
-                            <h3>Experiência:</h3>
-                            <ul class="credential-list">
-                                <li><i class="fas fa-check-circle"></i> Mais de 30 anos em UTI Neonatal</li>
-                                <li><i class="fas fa-check-circle"></i> Referência em primeira infância</li>
-                                <li><i class="fas fa-check-circle"></i> Acompanhamento desde o parto</li>
-                            </ul>
-                        </div>
+                        <img src="assets/logos/SELO .png" alt="Selo de Qualidade Dr. Vinicius Pediatra" class="dr-seal">
+                        <h3>Minha Formação:</h3>
+                        <ul>
+                            <li>Residência em Pediatria – Hospital Infantil Darcy Vargas (SP)</li>
+                            <li>Residência em Neonatologia – Hospital Estadual Leonor Mendes de Barros (SP)</li>
+                            <li>Formação em Nutrição Pediátrica – Universidade de Boston / Nestlé (EAD)</li>
+                        </ul>
                     </div>
                     
-                    <div style="text-align: center; margin: 30px 0;">
-                        <strong>CRM 12341 PR / RQE 9560</strong>
+                    <div class="credentials">
+                        <h3>Minha Experiência:</h3>
+                        <ul>
+                            <li>Mais de 30 anos em UTI Neonatal no Hospital Universitário de Londrina</li>
+                            <li>Referência em primeira infância e introdução alimentar</li>
+                            <li>Atendimento exclusivo em consultório particular</li>
+                        </ul>
+                    </div>
+                    
+                    <p style="font-style: italic; color: #2563eb; margin-top: 2rem;">
+                        "Cada criança é única e merece tempo, cuidado e atenção para crescer com saúde e segurança."
+                    </p>
+                    
+                    <p><strong>Foco: 0 a 6 anos e acompanhamento desde o parto</strong></p>
+                    
+                    <div style="margin-top: 2rem;">
+                        <a href="#contato" class="btn btn-primary">
+                            <i class="fas fa-calendar-alt"></i> Agende sua consulta agora
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contato" class="contact section">
+    <!-- Strategic Branding Section -->
+    <section id="branding" class="section branding-section" data-aos="fade-in" data-aos-disable="true">
         <div class="container">
-            <h2>Contato e Localização</h2>
+            <div class="branding-content">
+                <img src="assets/logos/SELO .png" alt="Selo de Qualidade Dr. Vinicius Pediatra" class="dr-seal">
+                <div class="branding-image">
+                    <img src="assets/fotos/DSC07378.JPG" alt="Dr. Marcus Vinícius Cunha - Pediatra Especialista" class="circular-photo">
+                </div>
+                <div class="branding-text">
+                    <h2>Meu Compromisso com Seu Filho</h2>
+                    <p>"Mais que tratar, eu ajudo famílias a construírem uma base sólida de saúde e confiança desde os primeiros dias de vida."</p>
+                    
+                    <div class="branding-points">
+                        <div class="branding-point">
+                            <div class="icon">👶</div>
+                            <div>
+                                <h4>Atendimento Personalizado</h4>
+                                <p>Cada consulta é única e adaptada às necessidades específicas do seu filho e família.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="branding-point">
+                            <div class="icon">⏰</div>
+                            <div>
+                                <h4>Tempo Sem Pressa</h4>
+                                <p>Consultas de pelo menos 45 minutos para garantir todas as suas dúvidas sejam esclarecidas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="branding-point">
+                            <div class="icon">🔬</div>
+                            <div>
+                                <h4>Ciência na Prática</h4>
+                                <p>Orientações baseadas em evidências científicas mais recentes e minha experiência de 30+ anos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="branding-point">
+                            <div class="icon">💝</div>
+                            <div>
+                                <h4>Acolhimento Familiar</h4>
+                                <p>Entendo que cuidar de um bebê é um projeto familiar completo, envolvendo pais, avós e todos os cuidadores.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="branding-point">
+                            <div class="icon">🎯</div>
+                            <div>
+                                <h4>Foco na Prevenção</h4>
+                                <p>Trabalho proativamente para evitar problemas, fortalecendo o sistema imunológico e desenvolvimento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 2.5rem; text-align: center;">
+                        <blockquote style="font-style: italic; color: #667eea; font-size: 1.1rem; margin: 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.7); border-radius: 12px; border-left: 4px solid #667eea;">
+                            "Seu filho tem apenas uma primeira infância. Vamos fazer dela uma experiência segura, saudável e feliz."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Steps -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-content">
+                <h2>Como funciona na prática</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Agendamento</h3>
+                        <p>Escolha seu horário de forma simples e rápida</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Consulta longa e acolhedora</h3>
+                        <p>Escuta ativa e plano personalizado para sua família</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Seguimento estruturado</h3>
+                        <p>Orientações por escrito e retorno programado</p>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i> Agende sua consulta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Vision -->
+    <section class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2>Imagine viver a primeira infância do seu filho com mais confiança e leveza</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div style="padding: 1rem;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">✅</div>
+                        <p><strong>Clareza sobre cada etapa</strong></p>
+                    </div>
+                    <div style="padding: 1rem;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">✅</div>
+                        <p><strong>Prevenção de problemas</strong></p>
+                    </div>
+                    <div style="padding: 1rem;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">✅</div>
+                        <p><strong>Segurança em sono e alimentação</strong></p>
+                    </div>
+                    <div style="padding: 1rem;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">✅</div>
+                        <p><strong>Tempo respeitado da família</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Failure to Avoid -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-content">
+                <h2>O que você evita ao escolher este cuidado</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div style="background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">❌</div>
+                        <p><strong>Ansiedade em consultas rápidas</strong></p>
+                    </div>
+                    <div style="background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">❌</div>
+                        <p><strong>Decisões baseadas em informações rasas</strong></p>
+                    </div>
+                    <div style="background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">❌</div>
+                        <p><strong>Perda de oportunidades de prevenção</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicos" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2>Um atendimento pensado para a primeira infância</h2>
+                <div class="services-grid">
+                    <div class="service-card-content">
+                        <div class="service-icon">⏱️</div>
+                        <h3>Consultas longas</h3>
+                        <p>30–60 minutos para garantir tempo adequado de escuta e orientação</p>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">🍼</div>
+                        <h3>Experiência em sala de parto</h3>
+                        <p>Reanimação neonatal e acompanhamento desde os primeiros momentos</p>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">🥦</div>
+                        <h3>Nutrição infantil</h3>
+                        <p>Integração com especialistas em alimentação para crianças</p>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">📚</div>
+                        <h3>Atualização científica</h3>
+                        <p>Formação contínua e práticas baseadas em evidências</p>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">❤️</div>
+                        <h3>Escuta ativa</h3>
+                        <p>Acolhimento e atenção às necessidades de cada família</p>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">📍</div>
+                        <h3>Atendimento premium</h3>
+                        <p>Consultório moderno e bem equipado em Londrina</p>
+                    </div>
+                </div>
+                <div style="margin-top: 3rem;">
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i> Agendar consulta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Google Reviews -->
+    <section class="section testimonials">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="section-title">
+                <h2>TESTEMUNHOS</h2>
+                <p>O que dizem meus pacientes</p>
+            </div>
+            
+            <div class="google-reviews-container">
+                <!-- Professional Google Reviews Widget -->
+                <div class="google-reviews-widget">
+                    <div class="review-widget-header">
+                        <!-- Google Logo -->
+                        <div style="margin-bottom: 1rem;">
+                            <div class="google-logo-header">
+                                <span style="font-family: 'Product Sans', Arial, sans-serif; font-size: 1.5rem; font-weight: 400;">
+                                    <span style="color: #4285F4;">G</span><span style="color: #EA4335;">o</span><span style="color: #FBBC05;">o</span><span style="color: #4285F4;">g</span><span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Rating Summary -->
+                        <div class="google-rating-section">
+                            <p class="rating-summary">Com base em <strong>47+ avaliações</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="reviews-carousel">
+                        <div class="carousel-container" id="reviewsCarousel">
+                            <!-- Review 1: Michele Thomazinho -->
+                            <div class="review-card">
+                                <div class="review-content" >
+                                    <div class="reviewer-profile">
+                                        <div class="profile-image-container">
+                                            <img src="https://ui-avatars.com/api/?name=Michele+Thomazinho&background=667eea&color=fff&size=64" alt="Michele Thomazinho" class="profile-image">
+                                            <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="Google" class="google-badge">
+                                        </div>
+                                        <div class="review-stars-small">
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                        </div>
+                                        <h4 class="reviewer-name">Michele Thomazinho</h4>
+                                        <p class="review-date">há 4 meses</p>
+                                    </div>
+                                    <blockquote class="review-quote">"É pediatra dos meus filhos de 11 e 9 anos e agora do terceirinho que acabou de chegar! Competente, atencioso, desde a sala de parto. Muito respeitoso e aberto a conversar e ouvir os pais. Um profissional excelente e muito competente."</blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Review 2: Marina Durazzo -->
+                            <div class="review-card">
+                                <div class="review-content" >
+                                    <div class="reviewer-profile">
+                                        <div class="profile-image-container">
+                                            <img src="https://ui-avatars.com/api/?name=Marina+Durazzo&background=f5576c&color=fff&size=64" alt="Marina Durazzo" class="profile-image">
+                                            <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="Google" class="google-badge">
+                                        </div>
+                                        <div class="review-stars-small">
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                        </div>
+                                        <h4 class="reviewer-name">Marina Durazzo</h4>
+                                        <p class="review-date">há 4 meses</p>
+                                    </div>
+                                    <blockquote class="review-quote">"O Dr Vinicius acompanha minha pequena desde a sala do parto, sempre atencioso, assertivo, competente e muito humano! A confiança que ele nos passa a cada consulta faz toda a diferença! É um profissional excepcional!"</blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Review 3: Juliana Maia Corcioli Buono -->
+                            <div class="review-card">
+                                <div class="review-content" >
+                                    <div class="reviewer-profile">
+                                        <div class="profile-image-container">
+                                            <img src="https://ui-avatars.com/api/?name=Juliana+Maia&background=34a853&color=fff&size=64" alt="Juliana Maia Corcioli Buono" class="profile-image">
+                                            <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="Google" class="google-badge">
+                                        </div>
+                                        <div class="review-stars-small">
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                        </div>
+                                        <h4 class="reviewer-name">Juliana Maia Corcioli Buono</h4>
+                                        <p class="review-date">há 2 meses</p>
+                                    </div>
+                                    <blockquote class="review-quote">"Excelente pediatra!! Dr. Vinícius acompanha meu filho desde o nascimento (há 12 anos), sempre muito atencioso e prestativo!"</blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Review 4: Gabriela Honorato -->
+                            <div class="review-card">
+                                <div class="review-content" >
+                                    <div class="reviewer-profile">
+                                        <div class="profile-image-container">
+                                            <img src="https://ui-avatars.com/api/?name=Gabriela+Honorato&background=ea4335&color=fff&size=64" alt="Gabriela Honorato" class="profile-image">
+                                            <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="Google" class="google-badge">
+                                        </div>
+                                        <div class="review-stars-small">
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                        </div>
+                                        <h4 class="reviewer-name">Gabriela Honorato</h4>
+                                        <p class="review-date">há 1 mês</p>
+                                    </div>
+                                    <blockquote class="review-quote">"Excelente médico! Foi indicação de um casal de amigos. Nos acompanha desde o parto do nosso filho, sempre atencioso, gentil, acolhedor. Confiamos e indicamos!"</blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Review 5: Heloísa Silva Melchior -->
+                            <div class="review-card">
+                                <div class="review-content" >
+                                    <div class="reviewer-profile">
+                                        <div class="profile-image-container">
+                                            <img src="https://ui-avatars.com/api/?name=Heloisa+Silva&background=9c88ff&color=fff&size=64" alt="Heloísa Silva Melchior" class="profile-image">
+                                            <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="Google" class="google-badge">
+                                        </div>
+                                        <div class="review-stars-small">
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                        </div>
+                                        <h4 class="reviewer-name">Heloísa Silva Melchior</h4>
+                                        <p class="review-date">há 4 meses</p>
+                                    </div>
+                                    <blockquote class="review-quote">"Melhor pediatra que já fomos! Ele é médico das minhas duas filhas. Muito atencioso, amoroso e um excelente profissional. Com certeza indico para as mamães."</blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Review 6: Jacqueline Stefani - Eberle -->
+                            <div class="review-card">
+                                <div class="review-content" >
+                                    <div class="reviewer-profile">
+                                        <div class="profile-image-container">
+                                            <img src="https://ui-avatars.com/api/?name=Jacqueline+Stefani&background=fbbf24&color=fff&size=64" alt="Jacqueline Stefani - Eberle" class="profile-image">
+                                            <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="Google" class="google-badge">
+                                        </div>
+                                        <div class="review-stars-small">
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-small" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                        </div>
+                                        <h4 class="reviewer-name">Jacqueline Stefani - Eberle</h4>
+                                        <p class="review-date">há 1 mês</p>
+                                    </div>
+                                    <blockquote class="review-quote">"Dr. Marcus Vinicius é excelente profissional, atencioso. Tem paciência com as crianças. Explica bem certinho as nossas dúvidas. E de um conhecimento muito amplo. Atendimento na hora. Recomendo muito!!!"</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation Controls -->
+                        <button class="carousel-nav carousel-prev" aria-label="Depoimento anterior">
+                            <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                            </svg>
+                        </button>
+                        <button class="carousel-nav carousel-next" aria-label="Próximo depoimento">
+                            <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                        
+                        <!-- Indicators -->
+                        <div class="carousel-indicators">
+                            <button class="indicator active" data-slide="0"></button>
+                            <button class="indicator" data-slide="1"></button>
+                            <button class="indicator" data-slide="2"></button>
+                            <button class="indicator" data-slide="3"></button>
+                            <button class="indicator" data-slide="4"></button>
+                            <button class="indicator" data-slide="5"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Google Maps Link -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">
+                    📍 Confira todos os <strong>47+ depoimentos reais</strong> no meu perfil oficial
+                </p>
+                <a href="https://www.google.com/maps/place/Dr.+Marcus+Vin%C3%ADcius+-+Pediatra+em+Londrina/@-23.3304154,-51.1721936,17z/data=!3m1!4b1!4m6!3m5!1s0x94eb435b0894a7ed:0x8c60e86dde979c88!8m2!3d-23.3304154!4d-51.1721936!16s%2Fg%2F11wc20mjjf?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-secondary" style="margin-top: 1rem;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" style="margin-right: 8px;">
+                        <path fill="currentColor" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                        <path fill="currentColor" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                        <path fill="currentContent" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                        <path fill="currentColor" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                    </svg>
+                    Ver Todos os Depoimentos no Google
+                </a>
+            </div>
+        </section>
+
+    <!-- CTA Final -->
+    <section class="section cta-final">
+        <div class="container" style="margin-top: 2rem;">
+            <div class="section-content">
+                <h2>Seu filho tem apenas uma primeira infância. Vamos cuidar dela juntos?</h2>
+                <p style="color: #60a5fa; font-weight: 500;">As consultas são limitadas para garantir tempo adequado em cada atendimento.</p>
+                <div class="cta-buttons">
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i> Agendar consulta
+                    </a>
+                    <a href="https://wa.me/5543999999999" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contato" class="section">
+        <div class="container">
             <div class="contact-info">
-                <div class="contact-item">
-                    <h3>📞 Telefone:</h3>
-                    <p><strong>(43) 3329-8008</strong></p>
+                <div class="contact-details">
+                    <h3>Entre em contato</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Endereço</strong><br>
+                            R. Bento Munhoz da Rocha Neto, 543<br>
+                            Jardim do Lago, Londrina - PR<br>
+                            86061-460
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Telefone</strong><br>
+                            (43) 3329-8008
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <strong>Horário de atendimento</strong><br>
+                            Segunda a Sexta: 8h às 18h<br>
+                            Sábado: 8h às 12h
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://Wa.me/5543999999999" class="btn btn-primary">
+                            <i class="fas fa-calendar-alt"></i> Agendar via WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.8!2d-51.1721936!3d-23.3304154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb435b0894a7ed%3A0x8c60e86dde979c88!2sDr.%20Marcus%20Vin%C3%ADcius%20-%20Pediatra%20em%20Londrina!5e0!3m2!1spt-BR!2sbr!4v1625097600000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="faq-container">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Dúvidas frequentes</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Aceita planos de saúde?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O atendimento é particular, mas muitos planos oferecem reembolso. Podemos te orientar no processo caso tenha interesse.</p>
+                    </div>
                 </div>
                 
-                <div class="contact-item">
-                    <h3>💬 WhatsApp:</h3>
-                    <p><strong>(43) 99999-9999</strong></p>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Qual a duração das consultas?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>As consultas variam de 30 a 60 minutos, dependendo das necessidades de cada família. Não há pressa para garantir qualidade no atendimento.</p>
+                    </div>
                 </div>
                 
-                <div class="contact-item">
-                    <h3>⏰ Horários:</h3>
-                    <p>Segunda a Sexta: 8h às 18h</p>
-                    <p>Sábado: 8h às 12h</p>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Atende gestantes?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, inclusive no parto. Fazemos acompanhamento pré-natal pediátrico e estamos disponíveis para o momento do nascimento.</p>
+                    </div>
                 </div>
                 
-                <div class="contact-item">
-                    <h3>📍 Endereço:</h3>
-                    <p>R. Bento Munhoz da Rocha Neto, 543</p>
-                    <p>Jardim do Lago, Londrina - PR</p>
-                    <p>CEP: 86061-460</p>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Faz consultas on-line?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para orientações específicas e seguimentos, é possível realizar consultas online quando apropriado.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como funciona a vacinação?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Fornecemos orientação completa sobre vacinação com calendário atualizado e acompanhamento individualizado.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como agendar?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você pode agendar através do WhatsApp ou entrando em contato pelo telefone. Nossa equipe está sempre disponível para te ajudar.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -447,50 +2246,109 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>👨‍⚕️ Dr. Marcus Vinícius</h3>
-                    <p>Pediatra com +33 anos de experiência cuidando da saúde das crianças em Londrina</p>
-                    <div class="footer-contact">
-                        <p><strong>📍 Endereço:</strong></p>
-                        <p>R. Bento Munhoz da Rocha Neto, 543</p>
-                        <p>Jardim do Lago, Londrina - PR</p>
-                        <p><strong>📞 (43) 3329-8008</strong></p>
-                        <p><strong>⏰ Segunda a Sexta: 8h às 18h</strong></p>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>📋 Informações Importantes</h3>
-                    <div class="footer-info">
-                        <p><strong>Dr. Marcus Vinícius Gomes da Cunha</strong></p>
-                        <p><strong>CRM 12341 PR / RQE 9560</strong></p>
-                        <p>Aviso ético: Este site tem caráter informativo e educativo, não substitui consulta médica.</p>
-                        <p>Especialista em Neonatologia e primeira infância</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <p>&copy; 2024 Dr. Marcus Vinícius Cunha. Todos os direitos reservados.</p>
-                    <p>Desenvolvido com ❤️ para o cuidado da saúde infantil</p>
-                </div>
-            </div>
+            <p><strong>Dr. Marcus Vinícius Gomes da Cunha – CRM 12341 PR / RQE 9560</strong></p>
+            <p>Aviso ético: caráter informativo e educativo, não substitui consulta médica</p>
+            <p style="margin-top: 1rem;">
+                <a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none; margin: 0 1rem;">Política de Privacidade</a>
+                <a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none; margin: 0 1rem;">Termos de Uso</a>
+            </p>
         </div>
     </footer>
 
+    <!-- AOS Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
     <script>
-        // WhatsApp link with pre-filled message
-        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
-            const currentHref = link.getAttribute('href');
-            if (!currentHref.includes('text=')) {
-                const message = encodeURIComponent('Olá! Gostaria de agendar uma consulta com o Dr. Marcus Vinícius.');
-                link.setAttribute('href', currentHref + '?text=' + message);
+        // Initialize AOS animations
+        AOS.init({
+            duration: 300,
+            easing: 'ease-out',
+            once: true,
+            offset: -100
+        });
+        
+        // DESATIVA AOS na seção específica que estava separando
+        document.addEventListener('DOMContentLoaded', function() {
+            const problemSection = document.querySelector('.section-gray');
+            if (problemSection) {
+                problemSection.style.transform = 'translateZ(0) translateY(0px) translateX(0px) scale(1)';
+                problemSection.style.marginTop = '-1px';
+                problemSection.style.paddingTop = '0px';
+                
+                // Força a posição a cada frame
+                function forcePosition() {
+                    problemSection.style.transform = 'translateZ(0) translateY(0px) translateX(0px) scale(1) !important';
+                    requestAnimationFrame(forcePosition);
+                }
+                forcePosition();
+            }
+            
+            // FORÇA seção de branding completamente FIXA
+            const brandingSection = document.querySelector('.branding-section');
+            if (brandingSection) {
+                // Remove any AOS attributes
+                brandingSection.removeAttribute('data-aos');
+                brandingSection.removeAttribute('data-aos-disable');
+                
+                // Force immediate visibility
+                const brandingElements = brandingSection.querySelectorAll('*');
+                brandingElements.forEach(el => {
+                    el.style.animation = 'none !important';
+                    el.style.transform = 'translateY(0) translateX(0) scale(1) !important';
+                    el.style.opacity = '1 !important';
+                    el.style.visibility = 'visible !important';
+                    el.removeAttribute('data-aos');
+                    el.removeAttribute('data-aos-delay');
+                });
+                
+                function forceBrandingVisibility() {
+                    brandingElements.forEach(el => {
+                        el.style.animation = 'none !important';
+                        el.style.transform = 'translateY(0) translateX(0) scale(1) !important';
+                        el.style.opacity = '1 !important';
+                        el.style.visibility = 'visible !important';
+                    });
+                    requestAnimationFrame(forceBrandingVisibility);
+                }
+                forceBrandingVisibility();
             }
         });
 
-        // Smooth scrolling for navigation links
+        // FAQ Toggle
+        function initializeFAQ() {
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', () => {
+                    console.log('FAQ clicked'); // Debug log
+                    const faqItem = question.parentElement;
+                    const isActive = faqItem.classList.contains('active');
+                    
+                    console.log('FAQ item:', faqItem, 'isActive:', isActive); // Debug log
+                    
+                    // Close all FAQ items
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        faqItem.classList.add('active');
+                        
+                        const answer = faqItem.querySelector('.faq-answer');
+                        console.log('FAQ answer:', answer); // Debug log
+                    }
+                });
+            });
+        }
+        
+        // Initialize FAQ when DOM is ready
+        document.addEventListener('DOMContentLoaded', initializeFAQ);
+        
+        // Fallback initialization after a short delay
+        setTimeout(() => {
+            initializeFAQ();
+        }, 1000);
+
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -503,6 +2361,236 @@
                 }
             });
         });
+
+        // Advanced scroll effects
+        let ticking = false;
+        
+        function updateScrollEffects() {
+            const header = document.querySelector('.header');
+            const scrolled = window.scrollY;
+            
+            if (scrolled > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            ticking = false;
+        }
+        
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(updateScrollEffects);
+                ticking = true;
+            }
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            const rate = scrolled * -0.5;
+            hero.style.transform = `translateY(${rate}px)`;
+        });
+
+        // Add floating animations to elements
+        document.querySelectorAll('.trust-item').forEach((item, index) => {
+            item.style.animationDelay = `${index * 0.2}s`;
+            item.style.animation = 'floatUpDown 3s ease-in-out infinite alternate';
+        });
+
+        // Add CSS for floating animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes floatUpDown {
+                0% { transform: translateY(0px); }
+                100% { transform: translateY(-10px); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Google Reviews Carousel
+        function setupCarousel() {
+            const slider = document.getElementById('googleReviewsSlider');
+            if (!slider) return;
+
+            // Esperar um pouco para garantir que o DOM está pronto
+            setTimeout(() => {
+                // Clone todos os cards originais para criar loop infinito
+                const originalCards = Array.from(slider.children);
+                const cardCount = originalCards.length;
+                
+                // Limpar qualquer conteúdo já clonado
+                slider.innerHTML = '';
+                
+                // Re-inserir cards originais
+                originalCards.forEach(card => {
+                    slider.appendChild(card);
+                });
+                
+                // Clonar uma segunda vez para o loop infinito
+                const clonedCards = Array.from(slider.children).map(card => {
+                    const clonedCard = card.cloneNode(true);
+                    
+                    // Remover efeitos AOS dos clones
+                    clonedCard.removeAttribute('data-aos');
+                    clonedCard.removeAttribute('data-aos-delay');
+                    clonedCard.classList.remove('aos-init', 'aos-animate');
+                    
+                    return clonedCard;
+                });
+                
+                // Adicionar clones ao slider
+                clonedCards.forEach(clone => {
+                    slider.appendChild(clone);
+                });
+                
+                // Configurar scroll automático
+                let scrollPosition = 0;
+                const scrollSpeed = 0.3; // pixels por frame (mais lento)
+                const singleSetWidth = slider.scrollWidth / 2; // Metade pois duplicamos
+                
+                let isPaused = false;
+                
+                function autoScroll() {
+                    if (!isPaused) {
+                        scrollPosition += scrollSpeed;
+                        
+                        // Reset suave quando chegar no meio
+                        if (scrollPosition >= singleSetWidth) {
+                            scrollPosition = 0;
+                        }
+                        
+                        slider.scrollLeft = scrollPosition;
+                    }
+                    
+                    requestAnimationFrame(autoScroll);
+                }
+                
+                // Controlar pausa/resume no hover
+                slider.addEventListener('mouseenter', () => {
+                    isPaused = true;
+                });
+                
+                slider.addEventListener('mouseleave', () => {
+                    isPaused = false;
+                });
+                
+                // Iniciar scroll automático
+                requestAnimationFrame(autoScroll);
+                
+                // Suavizar scroll para dispositivos móveis
+                let scrollTimeout;
+                slider.addEventListener('touchstart', () => {
+                    isPaused = true;
+                    clearTimeout(scrollTimeout);
+                });
+                
+                slider.addEventListener('touchend', () => {
+                    scrollTimeout = setTimeout(() => {
+                        isPaused = false;
+                    }, 2000);
+                });
+                
+            }, 100);
+        }
+
+        // Inicializar carrossel quando o DOM estiver pronto
+        document.addEventListener('DOMContentLoaded', setupCarousel);
+
+        // Google Reviews Professional Carousel
+        function initGoogleReviewsCarousel() {
+            const carousel = document.getElementById('reviewsCarousel');
+            const cards = document.querySelectorAll('.review-card');
+            const prevBtn = document.querySelector('.carousel-prev');
+            const nextBtn = document.querySelector('.carousel-next');
+            const indicators = document.querySelectorAll('.indicator');
+            
+            if (!carousel || cards.length === 0) return;
+            
+            let currentIndex = 0;
+            const totalCards = cards.length;
+            
+            function updateCarousel() {
+                const translateX = -currentIndex * 100;
+                carousel.style.transform = `translateX(${translateX}%)`;
+                
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalCards;
+                updateCarousel();
+            }
+            
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+                updateCarousel();
+            }
+            
+            function goToSlide(index) {
+                currentIndex = index;
+                updateCarousel();
+            }
+            
+            // Event listeners
+            nextBtn?.addEventListener('click', nextSlide);
+            prevBtn?.addEventListener('click', prevSlide);
+            
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => goToSlide(index));
+            });
+            
+            // Auto-play functionality
+            let autoPlayInterval;
+            const startAutoPlay = () => {
+                autoPlayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+            };
+            
+            const stopAutoPlay = () => {
+                clearInterval(autoPlayInterval);
+            };
+            
+            // Start auto-play
+            startAutoPlay();
+            
+            // Pause auto-play on hover
+            const carouselWrapper = document.querySelector('.reviews-carousel');
+            carouselWrapper?.addEventListener('mouseenter', stopAutoPlay);
+            carouselWrapper?.addEventListener('mouseleave', startAutoPlay);
+            
+            // Touch/swipe support for mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            carouselWrapper?.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+            
+            carouselWrapper?.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+            
+            function handleSwipe() {
+                const swipeThreshold = 50;
+                const diff = touchStartX - touchEndX;
+                
+                if (Math.abs(diff) > swipeThreshold) {
+                    if (diff > 0) {
+                        nextSlide(); // Swipe left = next
+                    } else {
+                        prevSlide(); // Swipe right = previous
+                    }
+                }
+            }
+        }
+        
+        // Initialize Google Reviews Carousel
+        document.addEventListener('DOMContentLoaded', initGoogleReviewsCarousel);
     </script>
 </body>
 </html>
